@@ -1,0 +1,64 @@
+:root { /* card background color*/
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --text-main: #222222;
+  --accent-color: #0d6efd; 
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("./image/fancy.jpg"); 
+  background-size: cover;       
+  background-position: center;   
+  background-repeat: no-repeat;  
+  background-attachment: fixed;  
+  color: var(--text-main);
+
+}
+
+
+h1 {
+  font-weight: 600;
+  color: white;
+}
+
+.main-card {
+  min-height: 220px;
+  background-color: var(--card-bg);
+  border-radius: 0.75rem;
+  backdrop-filter: blur(4px); /*see background softly*/
+}
+
+.card {
+  border-radius: 0.75rem;
+  background-color: var(--card-bg);
+  backdrop-filter: blur(4px);
+}
+
+.name-display {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.recent-name {
+  cursor: pointer;
+}
+
+.recent-name:hover {
+  background-color: rgba(241, 245, 249, 0.9);
+}
+
+.code-email {
+  font-family: "Courier New", monospace;
+}
+
+/* Small screen tweaks */
+@media (max-width: 576px) {
+  .name-display {
+    font-size: 1.4rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+}
